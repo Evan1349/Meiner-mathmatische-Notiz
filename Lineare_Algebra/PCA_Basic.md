@@ -1,6 +1,6 @@
 # Hauptkomponentenanalyse
 --
-![alt text](../Resources/image.png)
+![alt text](../Resources/PCA.png)
 --
 ## 1. Defintion und Ziel
 **Definition:** Die **Hauptkomponentenanalyse(PCA)** ist ein Verfahren der multivariaten Statistik, das zur *Dimensionsreduktion* verwendet wird.
