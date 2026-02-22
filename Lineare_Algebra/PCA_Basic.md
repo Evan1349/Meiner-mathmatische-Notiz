@@ -41,11 +41,11 @@ $$\bar{x} = (1, 1)$$
 
 $$D_{\text{martrix}} - \bar{x} = D_{\text{zentriert}}$$
 
-$$D_{\text{zentriert}} = \begin{bmatrix} -1 & -2 \\-1 & 0 \\ 1 & 0 \\ 1 & 2 \end{bmatrix}$$
+$$D_{\text{zentriert}} = \begin{bmatrix} -1 & -2 \cr -1 & 0 \cr 1 & 0 \cr 1 & 2 \end{bmatrix}$$
 
 ### Schritt B: Kovarianzmatrix berechnen
 
-$$\Sigma = \begin{bmatrix} 4/3 & 4/3 \\ 4/3 & 8/3 \end{bmatrix}$$
+$$\Sigma = \begin{bmatrix} 4/3 & 4/3 \cr 4/3 & 8/3 \end{bmatrix}$$
 
 ### Schritt C: Charakteristische Gleichung lösen
 
@@ -54,7 +54,7 @@ $$\det(\Sigma - \lambda I) = \lambda^2 - 4\lambda + \frac{16}{9} = 0$$
 **Ergebnisse für Eigenwerte**
 
 *nutzen*: 
-*$$\lambda = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$*
+$$\lambda = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
 
 
 $$\lambda = 2 \pm \frac{2}{3}\sqrt{5}$$
@@ -64,25 +64,25 @@ $$\lambda = 2 \pm \frac{2}{3}\sqrt{5}$$
 **Setzen Sie $\lambda$ in $\det(X - \lambda I) = 0$ ein.**
 
 ---
-*i. $$\Lambda = 2 + \frac{2}{3}\sqrt{5}$$*
+i. $\lambda$ = $$2 + \frac{2}{3}\sqrt{5}$$
 
-$$\begin{bmatrix} 4/3-\Lambda & 4/3 \\ 4/3 & 8/3-\Lambda \end{bmatrix} \cdot \begin{bmatrix}V_1 \\ V_2\end{bmatrix} = 0$$
+$$\begin{bmatrix} 4/3-\lambda & 4/3 \cr 4/3 & 8/3-\lambda \end{bmatrix} \cdot \begin{bmatrix}V_1 \\ V_2\end{bmatrix} = 0$$
 
 $$ 1+\sqrt{5}V_1 = 2V_2 $$
 
-$$ V_{\text{matrix}}= \begin{bmatrix} 2 \\ 1+\sqrt{5} \end{bmatrix} $$
+$$ V_{\text{matrix}}= \begin{bmatrix} 2 \cr 1+\sqrt{5} \end{bmatrix} $$
 
 $$\|\mathbf{V}\| = \sqrt{10 + 2\sqrt{5}}$$
 
 ---
 
-*ii. $$\Lambda = 2 - \frac{2}{3}\sqrt{5}$$*
+ii. $\lambda$ = $$2 - \frac{2}{3}\sqrt{5}$$
 
-$$\begin{bmatrix} 4/3-\Lambda & 4/3 \\ 4/3 & 8/3-\Lambda \end{bmatrix} \cdot \begin{bmatrix}V_1 \\ V_2\end{bmatrix} = 0$$
+$$\begin{bmatrix} 4/3-\lambda & 4/3 \cr 4/3 & 8/3-\lambda \end{bmatrix} \cdot \begin{bmatrix}V_1 \\ V_2\end{bmatrix} = 0$$
 
 $$ 1-\sqrt{5}V_1 = 2V_2 $$
 
-$$ V_{\text{matrix}}= \begin{bmatrix} 2 \\ 1-\sqrt{5} \end{bmatrix} $$
+$$ V_{\text{matrix}}= \begin{bmatrix} 2 \cr 1-\sqrt{5} \end{bmatrix} $$
 
 $$\|\mathbf{V}\| = \sqrt{10 - 2\sqrt{5}}$$
 
@@ -92,9 +92,9 @@ $$\|\mathbf{V}\| = \sqrt{10 - 2\sqrt{5}}$$
 
 **Orientierung:**
 
-*PC1 Orientierung* : $$\begin{bmatrix} 2 \\ 1+\sqrt{5} \end{bmatrix}$$
+*PC1 Orientierung* : $$\begin{bmatrix} 2 \cr 1+\sqrt{5} \end{bmatrix}$$
 
-*PC2 Orientierung* : $$\begin{bmatrix} 2 \\ 1-\sqrt{5} \end{bmatrix}$$
+*PC2 Orientierung* : $$\begin{bmatrix} 2 \cr 1-\sqrt{5} \end{bmatrix}$$
 
 **Varianzanteil:**
 
