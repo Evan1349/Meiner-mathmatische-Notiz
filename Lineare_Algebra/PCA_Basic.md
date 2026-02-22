@@ -33,7 +33,7 @@ $$Y = X \cdot V$$
 * **Gegeben sind vier Punkte: a(0, -1), b(0, 1), c(2, 1), d(2, 3)**
 
 ### Schritt A: Zentrierung der Daten
-*Bestimmen $\bar{x}$*
+*Bestimmen* $\bar{x}$
 
 $$\bar{x} = (1, 1)$$
 
@@ -66,9 +66,9 @@ $$\lambda = 2 \pm \frac{2}{3}\sqrt{5}$$
 ---
 i. $\lambda$ = $$2 + \frac{2}{3}\sqrt{5}$$
 
-$$\begin{bmatrix} 4/3-\lambda & 4/3 \cr 4/3 & 8/3-\lambda \end{bmatrix} \cdot \begin{bmatrix}V_1 \\ V_2\end{bmatrix} = 0$$
+$$\begin{bmatrix} 4/3-\lambda & 4/3 \cr 4/3 & 8/3-\lambda \end{bmatrix} \cdot \begin{bmatrix}V_1 \cr V_2\end{bmatrix} = 0$$
 
-$$ 1+\sqrt{5}V_1 = 2V_2 $$
+$$ (1+\sqrt{5})V_1 = 2V_2 $$
 
 $$ V_{\text{matrix}}= \begin{bmatrix} 2 \cr 1+\sqrt{5} \end{bmatrix} $$
 
@@ -78,9 +78,9 @@ $$\|\mathbf{V}\| = \sqrt{10 + 2\sqrt{5}}$$
 
 ii. $\lambda$ = $$2 - \frac{2}{3}\sqrt{5}$$
 
-$$\begin{bmatrix} 4/3-\lambda & 4/3 \cr 4/3 & 8/3-\lambda \end{bmatrix} \cdot \begin{bmatrix}V_1 \\ V_2\end{bmatrix} = 0$$
+$$\begin{bmatrix} 4/3-\lambda & 4/3 \cr 4/3 & 8/3-\lambda \end{bmatrix} \cdot \begin{bmatrix}V_1 \cr V_2\end{bmatrix} = 0$$
 
-$$ 1-\sqrt{5}V_1 = 2V_2 $$
+$$ (1-\sqrt{5})V_1 = 2V_2 $$
 
 $$ V_{\text{matrix}}= \begin{bmatrix} 2 \cr 1-\sqrt{5} \end{bmatrix} $$
 
