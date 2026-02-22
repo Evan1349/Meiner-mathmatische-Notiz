@@ -111,7 +111,7 @@ $$\begin{bmatrix} 2 \cr 1-\sqrt{5} \end{bmatrix}$$
 
 **Varianzanteil:**
 
-$$\frac{\lambda_1}{\lambda_1 + \lambda_2} \times 100\%$$
+$$\frac{\lambda_1}{\lambda_1 + \lambda_2} \times 100\text{%}$$
 
 * *PC1 Varianzanteil* : $\frac{3 + 2.236}{6} \approx \mathbf{87.27\%}$
 * *PC2 Varianzanteil* : $\frac{3 - 2.236}{6} \approx \mathbf{12.73\%}$
