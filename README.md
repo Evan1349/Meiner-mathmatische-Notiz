@@ -6,7 +6,7 @@ Dieses Repository dient der Dokumentation meines persönlichen Lernwegs in der M
 
 ## 📂 Verzeichnisstruktur
 
-* **[Lineare_Algebra/](./Linear_Algebra/)**
+* **[Lineare_Algebra/](./Lineare_Algebra/)**
     * `PCA_Basics.md`: Hauptkomponentenanalyse, Kovarianzmatrix und Eigenwerte.
 * **[Resources/](./Resources/)**
     * Bilder und Diagramme zur Veranschaulichung.
