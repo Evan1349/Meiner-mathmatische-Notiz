@@ -95,7 +95,7 @@ $$\|\mathbf{V}\| = \sqrt{10 - 2\sqrt{5}}$$
 
 ---
 
-$V_{unit} = \frac{V}{\|V\|}$
+$$V_{unit} = \frac{V}{\|V\|}$$
 
 ### Zusammenfassung der Ergebnisse:
 
