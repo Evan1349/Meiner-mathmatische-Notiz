@@ -1,7 +1,7 @@
 # Hauptkomponentenanalyse
---
+---
 ![alt text](../Resources/PCA.png)
---
+---
 ## 1. Defintion und Ziel
 **Definition:** Die **Hauptkomponentenanalyse(PCA)** ist ein Verfahren der multivariaten Statistik, das zur *Dimensionsreduktion* verwendet wird.
 
@@ -30,24 +30,78 @@ Zuletzt *transformieren* wir die ursprüngliche Matrix in den neuen Merkmalsraum
 $$Y = X \cdot V$$
 
 ## 3. Beispiel
+* **Gegeben sind vier Punkte: a(0, -1), b(0, 1), c(2, 1), d(2, 3)**
 
-### *Gegebene Daten (zentriert)*:
-$D = \{(-1, -2), (-1, 0), (1, 0), (1, 2)\}$
+### Schritt A: Zentrierung der Daten
+*Bestimmen $\bar{x}$*
 
-### Schritt 1: Kovarianzmatrix berechnen
+$$\bar{x} = (1, 1)$$
 
-$$\Sigma = \begin{pmatrix} 4/3 & 4/3 \\ 4/3 & 8/3 \end{pmatrix}$$
+*Daten (zentriert)*
 
-### Schritt 2: Charakteristische Gleichung lösen
+$$D_{\text{martrix}} - \bar{x} = D_{\text{zentriert}}
+
+$$D_{\text{zentriert}} = \begin{bmatrix} -1 & -2 \\-1 & 0 \\ 1 & 0 \\ 1 & 2 \end{bmatrix}$$
+
+### Schritt B: Kovarianzmatrix berechnen
+
+$$\Sigma = \begin{bmatrix} 4/3 & 4/3 \\ 4/3 & 8/3 \end{bmatrix}$$
+
+### Schritt C: Charakteristische Gleichung lösen
 
 $$\det(\Sigma - \lambda I) = \lambda^2 - 4\lambda + \frac{16}{9} = 0$$
 
-### Schritt 3: Ergebnisse für Eigenwerte
+**Ergebnisse für Eigenwerte**
 
-*nutzen*: $$\lambda = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+*nutzen*: 
+*$$\lambda = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$*
+
 
 $$\lambda = 2 \pm \frac{2}{3}\sqrt{5}$$
 
 ### Schritt 4: Transformation
 
-gesetzt 
+**Setzen Sie $\lambda$ in $\det(X - \lambda I) = 0$ ein.**
+
+---
+*i. $$\Lambda = 2 + \frac{2}{3}\sqrt{5}$$*
+
+$$\begin{bmatrix} 4/3-\Lambda & 4/3 \\ 4/3 & 8/3-\Lambda \end{bmatrix} \dot \begin{bmatrix}V_1 \\ V_2\end{bmatrix} = 0$$
+
+$$ 1+\sqrt{5}V_1 = 2V_2 $$
+
+$$ V_{text{matrix}}= \begin{bmatrix} 2 \\ 1+\sqrt{5} \end{matrix} $$
+
+$$\|\mathbf{V}\| = \sqrt{10 + 2\sqrt{5}}$$
+
+---
+
+*ii. $$\Lambda = 2 - \frac{2}{3}\sqrt{5}$$*
+
+$$\begin{bmatrix} 4/3-\Lambda & 4/3 \\ 4/3 & 8/3-\Lambda \end{bmatrix} \dot \begin{bmatrix}V_1 \\ V_2\end{bmatrix} = 0$$
+
+$$ 1-\sqrt{5}V_1 = 2V_2 $$
+
+$$ V_{text{matrix}}= \begin{bmatrix} 2 \\ 1-\sqrt{5} \end{matrix} $$
+
+$$\|\mathbf{V}\| = \sqrt{10 - 2\sqrt{5}}$$
+
+---
+
+### Folgliches Ergebnis:
+
+**Orientierung:**
+
+*PC1 Orientierung* : $$\begin{bmatrix} 2 \\ 1+\sqrt{5} \end{matrix}$$
+
+*PC2 Orientierung* : $$\begin{bmatrix} 2 \\ 1-\sqrt{5} \end{matrix}$$
+
+**Variablensatz:**
+
+$\frac{\lambda_1}{\lambda_1 + \lambda_2} \times 100\%$
+
+*PC1 Variablensatz* : $\frac{3 + 2.236}{6} \approx \mathbf{87.27\%}$
+
+*PC2 Variablensatz* : $\frac{3 - 2.236}{6} \approx \mathbf{12.73\%}$
+
+---
