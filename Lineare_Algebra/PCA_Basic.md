@@ -5,7 +5,7 @@
 ## 1. Definition und Ziel
 **Definition:** Die **Hauptkomponentenanalyse(PCA)** ist ein Verfahren der multivariaten Statistik, das zur *Dimensionsreduktion* verwendet wird.
 
-**Hauptziel:** Um Informationen aus einem großen Datensatz zu vereinfachen, wobei sie die wichtigsten Merkmale enthalten blieben. Dadurch können die Daten das *Rauschen* reduzieren. 
+**Hauptziel:** Um Informationen aus einem großen Datensatz zu vereinfachen, wobei sie die wichtigsten Merkmale erhalten blieben. Dadurch können die Daten das *Rauschen* reduzieren. 
 
 ## 2. Die Formel und Schritt-für-Schritt-Anleitung
 
@@ -14,10 +14,15 @@ Zuerst werden die Daten zentriert, um den *Mittelpunkt* der Datenwolke in den Ur
 
 $$X_{\text{zentriert}} = X - \bar{x}$$
 
+> Verschiebung zum Ursprung
+    Bei unterschiedlichen Einheiten sollten die Daten zusätzlich standardisiert werden
+
 ### B. **Kovarianzmatrix** (Statistik)
 Danach berechnen wir die *Kovarianzmatrix*, um die Korrelationen zwischen den Variablen zu verstehen.
 
 $$\Sigma = \frac{1}{n-1} X^T X$$
+
+> (n-1): Empirische Kovarianzmatrix
 
 ### C. **Charakteristische Gleichung** (Analyse)
 Um *Eigenwerte* ($\lambda$) zu finden, berechnen wir det().
@@ -39,13 +44,15 @@ $$\bar{x} = (1, 1)$$
 
 *Daten (zentriert)*
 
-$$D_{\text{martrix}} - \bar{x} = D_{\text{zentriert}}$$
+$$ Datenmatrix - \bar{x} = D_{\text{zentriert}}$$
 
 $$D_{\text{zentriert}} = \begin{bmatrix} -1 & -2 \cr -1 & 0 \cr 1 & 0 \cr 1 & 2 \end{bmatrix}$$
 
 ### Schritt B: Kovarianzmatrix berechnen
 
 $$\Sigma = \begin{bmatrix} 4/3 & 4/3 \cr 4/3 & 8/3 \end{bmatrix}$$
+
+> Empirische Kovarianzmatrix
 
 ### Schritt C: Charakteristische Gleichung lösen
 
@@ -88,7 +95,9 @@ $$\|\mathbf{V}\| = \sqrt{10 - 2\sqrt{5}}$$
 
 ---
 
-### Folgliches Ergebnis:
+$V_{unit} = \frac{V}{\|V\|}$
+
+### Zusammenfassung der Ergebnisse:
 
 **Orientierung:**
 
