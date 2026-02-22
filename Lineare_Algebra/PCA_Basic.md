@@ -61,7 +61,7 @@ $$\lambda = 2 \pm \frac{2}{3}\sqrt{5}$$
 
 ### Schritt D: Transformation
 
-**Setzen Sie $\lambda$ in $\det(X - \lambda I) = 0$ ein.**
+**Setzen Sie $\lambda$ in $\det(\Sigma - \lambda I) = 0$ ein.**
 
 ---
 i. $\lambda$ = $$2 + \frac{2}{3}\sqrt{5}$$
