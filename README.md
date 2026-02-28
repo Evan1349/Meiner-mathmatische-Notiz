@@ -6,6 +6,8 @@ Dieses Repository dient der Dokumentation meines persönlichen Lernwegs in der M
 
 ## 📂 Verzeichnisstruktur
 
+* **[Analyse/](./Analyse/)**
+    * `Ableitung_1_Differentiation`: Grundlagen der Differentiation, Ableitung von Potenz-, Sinus-, Cosinus- und Exponentialfunktionen.
 * **[Lineare_Algebra/](./Lineare_Algebra/)**
     * `PCA_Basics.md`: Hauptkomponentenanalyse, Kovarianzmatrix und Eigenwerte.
 * **[Resources/](./Resources/)**
