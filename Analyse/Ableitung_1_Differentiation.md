@@ -14,13 +14,14 @@
 **Definition:** Die Ableitung $f'(x)$ gibt die *momentane Änderungsrate* (Steigung) einer Funktion an einer Stelle $x$ an.
 
 **Formel:** 
+
 *1. Differentialquotient*
 
 $$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
 
 *2. lineare Funktion*
 
-- $f(x) = mx + b \implies f'(x) = m$
+- $f(x) = ax^n + b \implies f'(x) = a \cdot n \cdot x^{n-1}$
 
 *3. Trigonometrische Funktionen*
 
@@ -37,4 +38,74 @@ $$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
 
 ---
 
-## Beispiel und Berechnung
+## Beispiel und Berechnen
+
+**1. Differentialquotient**
+
+Gegeben sei $f(x) = 5x^3+2x^2+1$. Berechnen Sie die Ableitung der Funktion $f(x)$ mithilfe der Definition: $$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$.
+
+a. $$f(x+h) = 5(x+h)^3+2(x+h)^2+1$$ 
+
+$$= (5x^3+15x^2h+15xh^2+5h^3)+(2x^2+4xh+2h^2)+1$$
+
+$$= (5x^3+2x^2+1)+h(15x^2+4x+5h^2+15xh+2h)$$
+
+b. $$ f(x+h)- f(x) = h(15x^2+4x+5h^2+15xh+2h)$$
+
+c. $$\frac{f(x+h) - f(x)}{h} = (15x^2+4x+5h^2+15xh+2h)$$
+
+d. Wenn $ h \to 0$, dass $h=0$ die Funktion gesetzen $\to$ Setzt man $h=0$ in den Ausdruck ein, erhält man: $15x^2+4x$.
+
+e. Ergebnis: 
+
+$$f'(x) = 15x^2 + 4x \quad \text{(Anwendung der Regel: } f(x) = ax^n \implies f'(x) = a \cdot n \cdot x^{n-1} \text{)}$$
+
+---
+
+**2. lineare Funktion**
+
+Gegeben sei $f(x) = 7x^5+x^4+10x^3+2x^2+9x+10$. Berechnen Sie die Ableitung.
+
+$$f'(x) = 35x^4+4x^3+30x^2+4x+9$$
+
+---
+
+**3. Trigonometrische Funktionen (Ableitung der Cosinusfunktion)**
+
+Gegeben sei $f(x) = \cos(x)$. Berechnen Sie die Ableitung der Funktion $f(x)$ mithilfe der Definition:$$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
+
+a. Einsetzen der Funktion:$$f'(x) = \lim_{h \to 0} \frac{\cos(x+h) - \cos(x)}{h}$$Additionstheorem:$$\cos(x + h) = \cos(x)\cos(h) - \sin(x)\sin(h)$$
+
+b. Anwendung des Additionstheorems:$$f'(x) = \lim_{h \to 0} \frac{[\cos(x)\cos(h) - \sin(x)\sin(h)] - \cos(x)}{h}$$
+
+c. Umstellen und Ausklammern von $\cos(x)$:$$f'(x) = \lim_{h \to 0} \frac{\cos(x)(\cos(h) - 1) - \sin(x)\sin(h)}{h}$$
+
+d. Aufteilen in zwei Grenzwerte:$$f'(x) = \cos(x) \cdot \lim_{h \to 0} \frac{\cos(h) - 1}{h} - \sin(x) \cdot \lim_{h \to 0} \frac{\sin(h)}{h}$$
+
+Wichtige Grenzwerte für Winkelfunktionen:
+
+$\lim_{h \to 0} \frac{\sin(h)}{h} = 1$,
+$\lim_{h \to 0} \frac{\cos(h) - 1}{h} = 0$
+
+e. Einsetzen der Grenzwerte:$$f'(x) = \cos(x) \cdot (0) - \sin(x) \cdot (1)$$f. Ergebnis:$$f'(x) = - \sin(x)$$
+
+
+**4. Die natürliche Exponentialfunktion (Ableitung von $e^x$)**
+
+Gegeben sei die Funktion $f(x) = e^x$. Wir berechnen die Ableitung mithilfe des Differentialquotienten:$$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
+
+a. Einsetzen der Funktion:$$f'(x) = \lim_{h \to 0} \frac{e^{x+h} - e^x}{h}$$
+
+b. Anwendung der Potenzgesetze ($e^{x+h} = e^x \cdot e^h$):$$f'(x) = \lim_{h \to 0} \frac{e^x \cdot e^h - e^x}{h}$$
+
+c. Ausklammern von $e^x$:$$f'(x) = \lim_{h \to 0} \frac{e^x (e^h - 1)}{h}$$
+
+d. Da $e^x$ nicht von $h$ abhängt, ziehen wir es vor den Grenzwert:$$f'(x) = e^x \cdot \lim_{h \to 0} \frac{e^h - 1}{h}$$
+
+Definition der Eulerschen Zahl ($e$):Die Zahl $e$ ist genau so definiert, dass dieser spezifische Grenzwert $1$ ergibt:$$\lim_{h \to 0} \frac{e^h - 1}{h} = 1$$
+
+e. Einsetzen des Grenzwerts:$$f'(x) = e^x \cdot 1$$
+
+f. Ergebnis:$$f'(x) = e^x$$
+
+Zusammenfassung: Die Funktion $f(x) = e^x$ ist ihre eigene Ableitung. Das bedeutet, dass zu jedem Zeitpunkt die Steigung der Kurve exakt ihrem aktuellen Wert entspricht.
