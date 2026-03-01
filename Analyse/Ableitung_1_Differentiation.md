@@ -66,9 +66,13 @@ $$=5x^3+2x^2+15x^2h+4xh+15xh^2+5h^3+2h^2+1$$
 
 $$=(5x^3+2x^2+1)+h(15x^2+4x+5h^2+15xh+2h)$$
 
-b. $$ f(x+h)- f(x) = h(15x^2+4x+5h^2+15xh+2h)$$
+b. 
 
-c. $$\frac{f(x+h) - f(x)}{h} = (15x^2+4x+5h^2+15xh+2h)$$
+$$ f(x+h)- f(x) = h(15x^2+4x+5h^2+15xh+2h)$$
+
+c. 
+
+$$\frac{f(x+h) - f(x)}{h} = (15x^2+4x+5h^2+15xh+2h)$$
 
 d. Wenn $ h \to 0$, dass $h=0$ die Funktion gesetzen $\to$ Setzt man $h=0$ in den Ausdruck ein, erhält man: $15x^2+4x$.
 
@@ -119,9 +123,9 @@ $\lim_{h \to 0} \frac{\cos(h) - 1}{h} = 0$
 
 e. Einsetzen der Grenzwerte:
 
-$$f'(x) = \cos(x) \cdot (0) - \sin(x) \cdot (1)$$f. 
+$$f'(x) = \cos(x) \cdot (0) - \sin(x) \cdot (1)$$
 
-Ergebnis:
+f. Ergebnis:
 
 $$f'(x) = - \sin(x)$$
 
@@ -158,6 +162,7 @@ f. Ergebnis:
 
 $$f'(x) = e^x$$
 
-Zusammenfassung: Die Funktion $f(x) = e^x$ ist ihre eigene Ableitung. Das bedeutet, dass zu jedem Zeitpunkt die Steigung der Kurve exakt ihrem aktuellen Wert entspricht.
+*Zusammenfassung:*
+Die Funktion $f(x) = e^x$ ist ihre eigene Ableitung. Das bedeutet, dass zu jedem Zeitpunkt die Steigung der Kurve exakt ihrem aktuellen Wert entspricht.
 
 >strukturelle Zusammenfassung
