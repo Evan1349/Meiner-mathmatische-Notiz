@@ -68,13 +68,13 @@ $$=(5x^3+2x^2+1)+h(15x^2+4x+5h^2+15xh+2h)$$
 
 b. 
 
-$$ f(x+h)- f(x) = h(15x^2+4x+5h^2+15xh+2h)$$
+$$f(x+h)- f(x) = h(15x^2+4x+5h^2+15xh+2h)$$
 
 c. 
 
 $$\frac{f(x+h) - f(x)}{h} = (15x^2+4x+5h^2+15xh+2h)$$
 
-d. Wenn $ h \to 0$, dass $h=0$ die Funktion gesetzen $\to$ Setzt man $h=0$ in den Ausdruck ein, erhält man: $15x^2+4x$.
+d. Wenn $h \to 0$, dass $h=0$ die Funktion gesetzen $\to$ Setzt man $h=0$ in den Ausdruck ein, erhält man: $15x^2+4x$.
 
 e. Ergebnis: 
 
