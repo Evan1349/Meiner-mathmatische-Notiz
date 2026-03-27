@@ -60,7 +60,9 @@ $$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
 
 Gegeben sei $f(x) = 5x^3+2x^2+1$. Berechnen Sie die Ableitung der Funktion $f(x)$ mithilfe der Definition: $f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$
 
-a. $$f(x+h) = 5(x+h)^3+2(x+h)^2+1$$ 
+a. 
+
+$$f(x+h) = 5(x+h)^3+2(x+h)^2+1$$ 
 
 $$=5x^3+2x^2+15x^2h+4xh+15xh^2+5h^3+2h^2+1$$
 
