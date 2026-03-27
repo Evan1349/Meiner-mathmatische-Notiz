@@ -58,7 +58,7 @@ $$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
 
 **(1) Differentialquotient**
 
-Gegeben sei $f(x) = 5x^3+2x^2+1$. Berechnen Sie die Ableitung der Funktion $f(x)$ mithilfe der Definition: $$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
+Gegeben sei $f(x) = 5x^3+2x^2+1$. Berechnen Sie die Ableitung der Funktion $f(x)$ mithilfe der Definition: $f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$
 
 a. $$f(x+h) = 5(x+h)^3+2(x+h)^2+1$$ 
 
@@ -92,7 +92,7 @@ $$f'(x) = 35x^4+4x^3+30x^2+4x+9$$
 
 **(3) Trigonometrische Funktionen (Ableitung der Cosinusfunktion)**
 
-Gegeben sei $f(x) = \cos(x)$. Berechnen Sie die Ableitung der Funktion $f(x)$ mithilfe der Definition:$$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
+Gegeben sei $f(x) = \cos(x)$. Berechnen Sie die Ableitung der Funktion $f(x)$ mithilfe der Definition: $f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$
 
 a. Einsetzen der Funktion:
 
@@ -132,7 +132,7 @@ $$f'(x) = - \sin(x)$$
 
 **4. Die natürliche Exponentialfunktion (Ableitung von $e^x$)**
 
-Gegeben sei die Funktion $f(x) = e^x$. Wir berechnen die Ableitung mithilfe des Differentialquotienten:$$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
+Gegeben sei die Funktion $f(x) = e^x$. Wir berechnen die Ableitung mithilfe des Differentialquotienten: $f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$
 
 a. Einsetzen der Funktion:
 
